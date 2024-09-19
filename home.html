@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>payoo Home</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+   <h1>Wellcome to home page</h1> 
+   <main class="flex justify-center">
+<div class="mockup-phone border-primary">
+  <!-- <div class="camera"></div> -->
+  <div class="display">
+ <div class="artboard artboard-demo phone-1">
+  <!--  money card-->
+<div class="stats shadow mt-10">
+  <div class="stat">
+    <div id="account-money" class="stat-value">400</div>
+    <div class="stat-desc">Availavle money right now</div>
+  </div>
+</div>    
+<div class="divider"></div>
+<!-- button -->
+<div>
+   <button id="btn-add-moey" class="btn btn-lg">Add money</button>
+   <button id="btn-cash-out" class="btn btn-lg">Cash out</button>                       
+</div>   
+  <!-- add money form start -->
+   <form id="add-money-form" class="card-body">
+        <div class="form-control">
+          <label class="label">
+            <span  class="label-text">Amount to add</span>
+          </label>
+          <input id="amount" type="text" placeholder="your amount" class="input input-bordered" required />
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">pin</span>
+          </label>
+          <input id="pinnumber" type="password" placeholder="password" class="input input-bordered" required />
+        </div>
+        <div class="form-control mt-6">
+          <button id="add-money" class="btn btn-primary">Add money</button>
+        </div>
+      </form>
+      <!-- add money ends here -->
+       <!-- cash out start -->
+       <form id="cash-out-form" class="hidden card-body">
+        <div class="form-control">
+          <label class="label">
+            <span  class="label-text">Amount to out</span>
+          </label>
+          <input id="amount-to-withdraw" type="text" placeholder=" amount to withdraw" class="input input-bordered" required />
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">pin</span>
+          </label>
+          <input id="pinNumber" type="password" placeholder="password" class="input input-bordered" required />
+        </div>
+        <div class="form-control mt-6">
+          <button id="out-money" class="btn btn-primary">cash out</button>
+        </div>
+      </form>
+       <!-- cash out ends -->
+ </div>
+     </div>
+   </div>                            
+   </main>  
+   <script src="/home.js"></script> 
+   <script src="/cashout.js"></script>
+   <script src="/toggle.js"></script>                       
+</body>
+</html>
