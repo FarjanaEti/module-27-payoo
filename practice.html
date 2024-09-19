@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>practice</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+    <main>
+      <div class="p-16 w-1/2 mx-auto h-auto bg-slate-100">
+          <!-- money -->
+          <div class="flex justify-between">
+           <div>
+          <h3 id="my-money" class="font-bold">45000</h3> 
+          <p>Available balane</p>                 
+           </div>                   
+           <div><button class="border-2 mt-3">loge out</button> </div>                     
+          </div>
+          <div class="divider"></div>
+          <h1 class="font-extrabold text-blue-400 text-3xl">Wellcome to jing ga la la </h1>
+          <p>Aki rono baja baji ghono ghono seki dhomoke dhomoke <br> drama dhimi dhimi ote lote chote chote lote pote</p>
+          <div class="divider"></div>
+          <!-- button -->
+      <div class=" bg-white grid grid-cols-3 gap-10 p-5">
+     <button id="btn-add-moey" class="btn btn-lg bg-slate-800 text-blue-600">Add money</button>
+      <button id="btn-cash-out" class="btn btn-lg bg-slate-800 text-blue-600">Cash out</button>
+      <button id="btn-cash-out" class="btn btn-lg bg-slate-800 text-blue-600">Transfer money</button>
+      <button id="btn-cash-out" class="btn btn-lg bg-slate-800 text-blue-600">Get bonus</button>
+      <button id="btn-cash-out" class="btn btn-lg bg-slate-800 text-blue-600">Pay bill</button>
+      <button id="btn-cash-out" class="btn btn-lg bg-slate-800 text-blue-600">Transection</button>
+      </div>
+      <!-- form -->
+       <h1 class="text-blue-400 my-10 text-3xl font-bold">Add Money</h1>
+        <!-- add money form start -->
+   <form id="add-money-form" class="card-body">
+        <div class="form-control">
+          <label class="label">
+            <span  class="label-text">Amount to add</span>
+          </label>
+          <input id="amount" type="text" placeholder="your amount" class="input input-bordered" required />
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Pin Number</span>
+          </label>
+          <input id="pinnumber" type="password" placeholder="password" class="input input-bordered" required />
+        </div>
+        <div class="form-control mt-6">
+          <button id="add-money" class="btn btn-primary">Add money</button>
+        </div>
+      </form>
+      <div class="divider"></div>
+      <!-- form ends here -->
+      <h1 class="text-blue-400 my-10 text-3xl font-bold">Cash out</h1>
+       <!-- cash out start -->
+       <form id="cash-out-form" class=" card-body">
+        <div class="form-control">
+          <label class="label">
+            <span  class="label-text">Amount to withdraw</span>
+          </label>
+          <input id="amount-to-withdraw" type="text" placeholder=" amount to withdraw" class="input input-bordered" required />
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Pin Number</span>
+          </label>
+          <input id="pinNumber" type="password" placeholder="password" class="input input-bordered" required />
+        </div>
+        <div class="form-control mt-6">
+          <button id="out-money" class="btn btn-primary">cash out</button>
+        </div>
+      </form>
+       <!-- cash out ends -->
+   </div>                        
+    </main> 
+    <!-- <script>
+      document.getElementById('add-money')
+    .addEventListener('click',function(event){
+      event.preventDefault();
+      const addMoney=document.getElementById('amount').value; 
+      console.log(addMoney)                       
+  })  
+    </script> -->
+    <script src="/prtc.js"></script>                         
+</body>
+</html>

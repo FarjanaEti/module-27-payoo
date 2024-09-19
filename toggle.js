@@ -13,6 +13,3 @@ document.getElementById('btn-add-moey')
        .classList.remove('hidde'); 
                        
 })
-const a= document.getElementById("container").innerHTML = "<p>Hello</p>";
- const b= document.getElementById("container").innerHTML += "<p>World</p>";
- console.log(a,b)
